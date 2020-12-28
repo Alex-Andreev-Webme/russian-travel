@@ -26,9 +26,126 @@
 .content {
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0 48px;
-	box-sizing: border-box;
+	padding: 28px 48px 0 48px;
 	/* Область видимости */
+	box-sizing: border-box;
 	border: 2px dotted blueviolet;
 	height: 100%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid blanchedalmond;
+}
+
+.header__links {
+	align-self: flex-start;
+	margin-top: 18px;
+}
+
+.header__lang-link {
+	margin: 0;
+	margin-right: 18px;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.header__lang-link:last-child {
+	margin-right: 0;
+}
+
+.header__lang-link_active {
+	border-bottom: 2px solid #fff;
+}
+
+.lead {
+	max-width: 984px;
+	margin: 0 auto;
+	padding-top: 56px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border: 1px solid blanchedalmond;
+}
+
+.lead__title {
+	margin: 0 0 32px 0;
+	max-width: 720px;
+	font-size: 96px;
+	font-weight: 900;
+	line-height: 100px;
+}
+
+.lead__subtitle {
+	margin: 0 0 64px 0;
+	max-width: 640px;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+}
+
+.lead__image {
+	width: 100%;
+	height: 615px;
+	background-image: url("../images/lead-polka.jpg");
+	background-size: cover;
+}
+
+.lead__caption {
+	margin: 8px 0 0 0;
+	font-family: Inter;
+	font-size: 10px;
+	line-height: 14px;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	align-self: flex-start;
+}
+
+.intro {
+	max-width: 984px;
+	margin: 0 auto;
+	padding: 92px 0;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid blanchedalmond;
+}
+
+.intro__title {
+	margin: 0 0 40px 0;
+	max-width: 690px;
+	font-size: 54px;
+	font-weight: 900;
+	line-height: 58px;
+}
+
+.intro__text {
+	margin: 0 0 33px 0;
+	max-width: 690px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.intro__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.intro__list-item {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.span-accent {
+	font-weight: 900;
+}
+
+.photo-grid {
+	display: grid;
+	gap: 16px;
 }
