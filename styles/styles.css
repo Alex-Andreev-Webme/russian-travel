@@ -53,10 +53,10 @@
 	margin-right: 0;
 }
 
-.header__lang-link:hover {
+/* .header__lang-link:hover {
 	opacity: .5;
 	transition: .2;
-}
+} */
 
 /* .header__lang-link:focus {
 	border-bottom: 2px solid #fff;
