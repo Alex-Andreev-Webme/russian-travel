@@ -26,17 +26,12 @@
 .content {
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 28px 48px 0 48px;
-	/* Область видимости */
-	box-sizing: border-box;
-	border: 2px dotted blueviolet;
-	height: 100%;
+	padding: 28px 48px 24px 48px;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
-	border: 1px solid blanchedalmond;
 }
 
 .header__links {
@@ -58,6 +53,15 @@
 	margin-right: 0;
 }
 
+.header__lang-link:hover {
+	opacity: .5;
+	transition: .2;
+}
+
+/* .header__lang-link:focus {
+	border-bottom: 2px solid #fff;
+} */
+
 .header__lang-link_active {
 	border-bottom: 2px solid #fff;
 }
@@ -70,7 +74,6 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	border: 1px solid blanchedalmond;
 }
 
 .lead__title {
@@ -112,7 +115,6 @@
 	padding: 92px 0;
 	display: flex;
 	flex-direction: column;
-	border: 1px solid blanchedalmond;
 }
 
 .intro__title {
@@ -147,5 +149,12 @@
 
 .photo-grid {
 	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
 	gap: 16px;
+}
+
+.photo-grid__item {
+	width: 100%;
+	max-height: 264px;
+	object-fit: cover;
 }
