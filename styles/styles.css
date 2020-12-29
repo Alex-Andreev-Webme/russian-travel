@@ -149,7 +149,7 @@
 
 .photo-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(284px, auto));
+	grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
 	gap: 16px;
 }
 
@@ -163,12 +163,14 @@
 	max-width: 984px;
 	margin: 0 auto;
 	padding: 92px 0;
-	border: 1px solid red;
 }
 
 .place {
 	width: 100%;
+	margin-bottom: 90px;
 	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 48px 40px;
 }
 
 .place__title {
@@ -181,10 +183,18 @@
 
 .place__image {
 	max-width: 460px;
+	object-fit: cover;
+}
+
+.place__website {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
 }
 
 .place__url-heading {
-	margin: 0;
+	margin: 0 0 12px 0;
 	font-size: 12px;
 	line-height: 12px;
 	letter-spacing: 0.2em;
@@ -208,4 +218,8 @@
 
 .place__paragraph:last-child {
 	margin: 0;
+}
+
+.cover {
+	border: 1px solid red;
 }
