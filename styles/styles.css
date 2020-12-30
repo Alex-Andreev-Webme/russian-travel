@@ -21,13 +21,15 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	background-color: #2a2c2f;
+	box-sizing: border-box;
+	padding: 28px 0 24px 0;
 }
 
-.content {
+/* .content {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 28px 48px 24px;
-}
+} */
 
 .link {
 	margin: 0;
@@ -43,6 +45,7 @@
 .header {
 	display: flex;
 	justify-content: space-between;
+	/* Сделать падинги для всех разрешений там, где это необходимо */
 }
 
 .header__links {
