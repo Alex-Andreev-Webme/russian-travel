@@ -7,15 +7,17 @@
 	<title>Путешествие по России</title>
 	<link rel="stylesheet" href="./styles/normalize.css">
 	<link rel="stylesheet" href="./styles/styles.css">
+	<!-- <link rel="stylesheet" href="./pages/index.css"> -->
 </head>
 
 <body class="page">
 	<div class="content">
+		<!-- Секция header -->
 		<header class="header">
 			<img src="./images/logo.svg" alt="Логотип" class="header__logo">
 			<div class="header__links">
-				<a href="#" class="header__lang-link header__lang-link_active">Ru</a>
-				<a href="#" class="header__lang-link">En</a>
+				<a href="#" class="header__lang-link header__lang-link_active link">Ru</a>
+				<a href="#" class="header__lang-link link">En</a>
 			</div>
 		</header>
 		<main class="main">
@@ -77,7 +79,7 @@
 					<h2 class="place__title">Куршская коса</h2>
 					<div class="place__website">
 						<h3 class="place__url-heading">URL</h3>
-						<a href="http://park-kosa.ru" target="_blank" class="place__link">park-kosa.ru</a>
+						<a href="http://park-kosa.ru" target="_blank" class="place__link link">park-kosa.ru</a>
 					</div>
 					<img src="./images/place-kosa.jpg" alt="Куршская коса" class="place__image">
 					<div class="place__text">
@@ -100,7 +102,7 @@
 					<div class="place__website">
 						<h3 class="place__url-heading">URL</h3>
 						<a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" target="_blank"
-							class="place__link">National Geographic</a>
+							class="place__link link">National Geographic</a>
 					</div>
 					<img src="./images/place-kolsky.jpg" alt="Кольский" class="place__image">
 					<div class="place__text">
@@ -123,7 +125,7 @@
 					<div class="place__website">
 						<h3 class="place__url-heading">URL</h3>
 						<a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" target="_blank"
-							class="place__link">Facebook</a>
+							class="place__link link">Facebook</a>
 					</div>
 					<img src="./images/place-altai.jpg" alt="Алтай" class="place__image">
 					<div class="place__text">
@@ -145,7 +147,8 @@
 					<h2 class="place__title">Зимний Байкал</h2>
 					<div class="place__website">
 						<h3 class="place__url-heading">URL</h3>
-						<a href="https://vk.com/baikalmile" target="_blank" class="place__link">https://vk.com/baikalmile</a>
+						<a href="https://vk.com/baikalmile" target="_blank"
+							class="place__link link">https://vk.com/baikalmile</a>
 					</div>
 					<img src="./images/place-winter-baikal.jpg" alt="Зимний Байкал" class="place__image">
 					<div class="place__text">
@@ -166,7 +169,7 @@
 					<h2 class="place__title">Карелия</h2>
 					<div class="place__website">
 						<h3 class="place__url-heading">URL</h3>
-						<a href="http://vodlozero.ru" target="_blank" class="place__link">http://vodlozero.ru/</a>
+						<a href="http://vodlozero.ru" target="_blank" class="place__link link">http://vodlozero.ru/</a>
 					</div>
 					<img src="./images/place-karelia.jpg" alt="Карелия" class="place__image">
 					<div class="place__text">
@@ -181,10 +184,37 @@
 					</div>
 				</article>
 			</section>
-			<section class="cover">
-
-			</section>
+			<!-- Секция cover -->
+			<a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" class="link">
+				<section class="cover">
+					<h2 class="cover__title">До Байкала «на собаках»</h2>
+					<p class="cover__subtitle">
+						По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.
+					</p>
+				</section>
+			</a>
 		</main>
+		<!-- Секция footer -->
+		<footer class="footer">
+			<ul class="footer__list">
+				<li class="footer__list-item">
+					<a href="https://yandex.ru/maps" target="_blank" class="footer__link link">Карты</a>
+				</li>
+				<li class="footer__list-item">
+					<a href="https://yandex.ru/pogoda" target="_blank" class="footer__link link">Погода</a>
+				</li>
+				<li class="footer__list-item">
+					<a href="https://rasp.yandex.ru" target="_blank" class="footer__link link">Расписание</a>
+				</li>
+				<li class="footer__list-item">
+					<a href="https://calendar.yandex.ru" target="_blank" class="footer__link link">Календарь</a>
+				</li>
+				<li class="footer__list-item">
+					<a href="https://travel.yandex.ru" target="_blank" class="footer__link link">Путешествия</a>
+				</li>
+			</ul>
+			<p class="footer__copyright">&copy; 2020. Андреев Алексей</p>
+		</footer>
 	</div>
 </body>
 

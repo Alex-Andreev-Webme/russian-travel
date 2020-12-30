@@ -29,6 +29,17 @@
 	padding: 28px 48px 24px;
 }
 
+.link {
+	margin: 0;
+	color: #fff;
+	text-decoration: none;
+}
+
+.link:hover {
+	opacity: .5;
+	transition: .2s;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -40,27 +51,14 @@
 }
 
 .header__lang-link {
-	margin: 0;
 	margin-right: 18px;
 	font-size: 24px;
-	font-weight: 400;
 	line-height: 28px;
-	color: #fff;
-	text-decoration: none;
 }
 
 .header__lang-link:last-child {
 	margin-right: 0;
 }
-
-.header__lang-link:hover {
-	opacity: .5;
-	transition: .2;
-}
-
-/* .header__lang-link:focus {
-	border-bottom: 2px solid #fff;
-} */
 
 .header__lang-link_active {
 	border-bottom: 2px solid #fff;
@@ -88,20 +86,19 @@
 	margin: 0 0 64px 0;
 	max-width: 640px;
 	font-size: 30px;
-	font-weight: 400;
 	line-height: 36px;
 }
 
 .lead__image {
 	width: 100%;
-	height: 615px;
+	min-height: 615px;
 	background-image: url("../images/lead-polka.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .lead__caption {
 	margin: 8px 0 0 0;
-	font-family: Inter;
 	font-size: 10px;
 	line-height: 14px;
 	letter-spacing: 0.15em;
@@ -167,10 +164,14 @@
 
 .place {
 	width: 100%;
-	margin-bottom: 90px;
+	margin-bottom: 80px;
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	gap: 48px 40px;
+}
+
+.place:last-child {
+	margin-bottom: 0;
 }
 
 .place__title {
@@ -182,7 +183,7 @@
 }
 
 .place__image {
-	max-width: 460px;
+	width: 100%;
 	object-fit: cover;
 }
 
@@ -205,8 +206,6 @@
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 22px;
-	color: #fff;
-	text-decoration: none;
 	border-bottom: 2px solid #fff;
 }
 
@@ -221,5 +220,84 @@
 }
 
 .cover {
-	border: 1px solid red;
+	width: 100%;
+	min-height: 740px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url("../images/cover-trains.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.cover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #2a2c2f;
+	opacity: .3;
+}
+
+.cover:hover::before {
+	opacity: .8;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.cover__title {
+	margin: 0;
+	max-width: 560px;
+	font-size: 72px;
+	font-weight: 900;
+	line-height: 76px;
+	z-index: 10;
+}
+
+.cover__subtitle {
+	margin: 32px 0 0 0;
+	max-width: 360px;
+	font-family: Inter;
+	font-size: 18px;
+	line-height: 22px;
+	z-index: 10;
+}
+
+.footer {
+	padding-top: 92px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+}
+
+.footer__list-item {
+	margin-right: 18px;
+}
+
+.footer__list-item:last-child {
+	margin-right: 0;
+}
+
+.footer__link {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.footer__copyright {
+	margin: 0;
+	font-size: 14px;
+	line-height: 16px;
 }
