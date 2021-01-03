@@ -16,4 +16,4 @@
 8. публикаия проекта на хостинге Git Hub Pages.
 
 ----
-Ссылка на проект:
+[Ссылка на проект] (https://alex-andreev-webme.github.io/russian-travel/)
