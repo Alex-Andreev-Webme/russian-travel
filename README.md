@@ -16,4 +16,4 @@
 8. публикация проекта на хостинге Git Hub Pages.
 
 ----
-[Ссылка на проект](https://alex-andreev-webme.github.io/russian-travel/index.html "Путешествие по России")
+[Ссылка на проект](https://alex-andreev-webme.github.io/russian-travel/ "Путешествие по России")
