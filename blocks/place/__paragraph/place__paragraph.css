@@ -5,6 +5,10 @@
 	line-height: 1.6;
 }
 
+.place__paragraph:last-child {
+	margin-bottom: 0;
+}
+
 @media screen and (max-width: 768px) {
 	.place__paragraph {
 		margin-bottom: 25px;
@@ -16,8 +20,4 @@
 	.place__paragraph {
 		padding: 0 16px;
 	}
-}
-
-.place__paragraph:last-child {
-	margin-bottom: 0;
 }

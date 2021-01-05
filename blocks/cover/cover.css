@@ -20,24 +20,6 @@
 	position: relative;
 }
 
-@media screen and (max-width: 1024px) {
-	.cover {
-		min-height: 640px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.cover {
-		min-height: 480px;
-	}
-}
-
-@media screen and (max-width: 425px) {
-	.cover {
-		min-height: 200px;
-	}
-}
-
 .cover::after {
 	content: "";
 	position: absolute;
@@ -57,4 +39,40 @@
 	-o-transition: .2s;
 	transition: .2s;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+	.cover {
+		min-height: 640px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.cover {
+		min-height: 480px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.cover {
+		min-height: 480px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.cover {
+		min-height: 360px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.cover {
+		min-height: 280px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.cover {
+		min-height: 200px;
+	}
 }

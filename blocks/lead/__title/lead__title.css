@@ -6,6 +6,20 @@
 	line-height: 1;
 }
 
+@media screen and (max-width: 680px) {
+	.lead__title {
+		max-width: 560px;
+		font-size: 72px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.lead__title {
+		max-width: 460px;
+		font-size: 60px;
+	}
+}
+
 @media screen and (max-width: 425px) {
 	.lead__title {
 		max-width: 288px;
