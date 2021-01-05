@@ -5,15 +5,12 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
 	gap: 16px;
-	/* Это было тут с самого начала, перенес в медиа запрос, возможно, из-за этого косяк */
-	/* padding: 0 48px; */
 }
 
 @media screen and (max-width: 1024px) {
 	.photo-grid {
-		/* Добавил */
-		padding: 0 48px;
 		gap: 14px;
+		padding: 0 48px;
 	}
 }
 

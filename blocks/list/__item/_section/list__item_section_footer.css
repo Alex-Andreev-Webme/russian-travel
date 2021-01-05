@@ -1,17 +1,17 @@
-.footer__list-item {
+.list__item_section_footer {
 	margin-right: 18px;
 }
 
 @media screen and (max-width: 425px) {
-	.footer__list-item {
+	.list__item_section_footer {
 		margin-right: 0;
 		margin-bottom: 32px;
 	}
-	.footer__list-item:last-child {
+	.list__item_section_footer:last-child {
 		margin-bottom: 0;
 	}
 }
 
-.footer__list-item:last-child {
+.list__item_section_footer:last-child {
 	margin-right: 0;
 }

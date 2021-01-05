@@ -1,12 +1,9 @@
-.footer__list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+.list_section_footer {
 	display: flex;
 }
 
 @media screen and (max-width: 425px) {
-	.footer__list {
+	.list_section_footer {
 		display: block;
 	}
 }
