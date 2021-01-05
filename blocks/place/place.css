@@ -6,14 +6,14 @@
 	gap: 48px 40px;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.place {
 		grid-template-columns: minmax(auto, 440px) 1fr;
 		gap: 48px 32px;
 	}
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.place {
 		margin-bottom: 73px;
 		grid-template-columns: minmax(auto, 340px) 1fr;
@@ -21,7 +21,7 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
 	.place {
 		margin-bottom: 50px;
 		grid-template-columns: 1fr;
