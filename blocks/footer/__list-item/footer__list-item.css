@@ -1,0 +1,17 @@
+.footer__list-item {
+	margin-right: 18px;
+}
+
+.footer__list-item:last-child {
+	margin-right: 0;
+}
+
+@media screen and (max-width: 425px) {
+	.footer__list-item {
+		margin-right: 0;
+		margin-bottom: 32px;
+	}
+	.footer__list-item:last-child {
+		margin-bottom: 0;
+	}
+}
