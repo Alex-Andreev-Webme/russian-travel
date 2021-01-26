@@ -31,13 +31,13 @@
 	height: 100%;
 	background-color: #2a2c2f;
 	opacity: .3;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s ease-in-out;
 }
 
 .cover:hover::after {
 	opacity: .8;
-	-webkit-transition: .2s;
-	-o-transition: .2s;
-	transition: .2s;
 	cursor: pointer;
 }
 

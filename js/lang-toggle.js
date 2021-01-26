@@ -1,4 +1,4 @@
-// Функционал смены языка на сайте
+// Смена языка
 let langToggle = document.querySelectorAll('.header__lang-link');
 let langRu = document.getElementById('langRu');
 let langEn = document.getElementById('langEn');
